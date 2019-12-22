@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User schema",
+    "type": "object",
+    "properties": {
+        "type": {"enum": ["user"]},
+        "id": {"type": "string"},
+        "attributes": {
+            "type": "object",
+            "properties": {
+                "email": {"type": "string", "format": "email"},
+                "name_first": {"type": "string"},
+                "name_last": {"type": "string"},
+                "zip": {"type": "string"}
+            },
+            "required": ["email", "name_first", "name_last", "zip"]
+        }
+    },
+    "required": ["type", "id", "attributes"],
+    "additionalProperties": false
+}
