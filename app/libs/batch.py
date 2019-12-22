@@ -7,7 +7,12 @@ from jsonschema import validate
 import json
 import inspect
 
-
+"""
+Create and execute HTTP (in local domain only) requests on separate threads.
+Validate the list of incoming requests.
+One all have repsonded, gather the results and return them in a list
+param request
+"""
 class Batch:
     """
     Initialize and validate request
