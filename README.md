@@ -1,9 +1,9 @@
 # Lite API
 This is a RESTful JSON API following the JSON:API specification.  It is built with Python, Flask, and Flask-REST-JSONAPI.
 
-https://www.palletsprojects.com/p/flask/
-https://flask-rest-jsonapi.readthedocs.io/en/latest/
-https://developers.google.com/classroom/guides/batch (Inspired the `POST /batch` endpoint)
+- https://www.palletsprojects.com/p/flask/
+- https://flask-rest-jsonapi.readthedocs.io/en/latest/
+- https://developers.google.com/classroom/guides/batch (Inspired the `POST /batch` endpoint)
 
 At the root of the project is an Insomnia (HTTP client) JSON file.  You can import that file into Insomnia and use to hit all the endpoints.  Here's a link to download the client: https://insomnia.rest/download/#mac.  You may need to configure the base_uri environment variable in Insomnia to match your base URL.
 
