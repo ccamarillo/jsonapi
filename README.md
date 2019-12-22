@@ -13,6 +13,7 @@ The API exposes a `POST /batch` endpoint to handle multiple requests.  See the I
 The installation instructions assumes you have `pip` installed.
 1. `pip install -r requirements.txt`
 1. `flask run`  This will give you a URL.  This is the base URL that you'll need to make calls to the API
+1. Go to `[base_url]/users` in your browser or HTTP client.
 
 ## Run Tests
 1. `pytest`
