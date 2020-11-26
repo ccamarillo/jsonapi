@@ -1,17 +1,19 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from gevent import monkey
 from flask_rest_jsonapi import Api
 import logging
 
 import json
+import os
 
 logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI');
 db = SQLAlchemy(app)
 api = Api(app)
-monkey.patch_all()  # This prevents a threading error
+
 db.init_app(app)
 
 from . import middleware
