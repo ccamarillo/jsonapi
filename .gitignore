@@ -4,3 +4,4 @@ __pycache__
 data
 .coverage
 workspace.code-workspace
+.DS_Store
