@@ -9,4 +9,5 @@ pytest==5.3.2
 pytest-cov==2.8.1
 pytest-mock==1.13.0
 rfc3339==6.2
-safrs==2.5.5
+safrs==2.10.4
+python-dotenv==0.15.0

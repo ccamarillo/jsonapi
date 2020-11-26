@@ -9,14 +9,12 @@ At the root of the project is an Insomnia (HTTP client) JSON file.  You can impo
 
 The API exposes a `POST /batch` endpoint to handle multiple requests.  It kicks of a thread for each item in your batch, waits for a repsonse from all, and responds when they complete.  See the Insomnia file for details on how to use.
 
-## Installation
-The installation instructions assumes you have `pip` installed.
-1. `pip install -r requirements.txt`
-1. `flask run`  This will give you a URL.  This is the base URL that you'll need to make calls to the API
-1. Go to `[base_url]/users` in your browser or HTTP client.
+## Run it with Docker
+1. `docker-compose up --build`
 
 ## Run Tests
+1. Pop into the docker container with `docker exec -it lite-api_web_1 /bin/bash`
 1. `pytest`
 
 ## Generating a Coverage Report
-1. `pytest --cov=. --cov-report term-missing`
+1. Inside the Docker container, `pytest --cov=. --cov-report term-missing`
