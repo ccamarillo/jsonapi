@@ -11,3 +11,4 @@ pytest-mock==1.13.0
 rfc3339==6.2
 safrs==2.10.4
 python-dotenv==0.15.0
+flask-cors==3.0.9
