@@ -1,6 +1,6 @@
 apispec==3.1.1
 apispec-webframeworks==0.5.2
-Flask==1.1.1
+Flask==2.3.2
 Flask-REST-JSONAPI==0.30.1
 Flask-SQLAlchemy==2.4.1
 grequests==0.4.0
